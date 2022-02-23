@@ -39,10 +39,7 @@ function createWindow () {
         event.preventDefault();
         win.hide();
     });
-    
-    win.on('show', function () {
-        tray.setHighlightMode('always');
-    })
+
 }
 
 ipcMain.on('exitButton', (event, arg) => {
